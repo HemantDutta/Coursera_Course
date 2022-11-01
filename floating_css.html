@@ -2,9 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Floating CSS</title>
+    <style>
+        div {
+            background-color: black;
+            color: white;
+        }
+
+        p {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            float: left; /* Right now, everything inside the div will float left, but we don't want the text inside the section tag to float left, so to continue the normal document flow, we will use the clear property on the section tag*/
+            margin-left: 10px;
+        }
+
+        #p1 {
+            background-color: red;
+        }
+
+        #p2 {
+            background-color: darkorchid;
+
+        }
+
+        #p3 {
+            background-color: orange;
+        }
+
+        #p4 {
+            background-color: deeppink;
+        }
+
+        section {
+            clear: left;
+        }
+    </style>
 </head>
 <body>
+    <h1>Floating Elements</h1>
 
+    <div>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <section>
+            Some content inside the section tag
+        </section>
+    </div>
 </body>
 </html>
