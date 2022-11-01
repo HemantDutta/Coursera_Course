@@ -13,10 +13,19 @@
         h1.top{  /* Selector for h1 Tags where class is top*/
             color: forestgreen;
         }
+
+        div > p{ /*All the p tags that are direct children of a div tag will be selected using this selector*/
+            color: orange;
+        }
     </style>
 </head>
 <body>
     <h1 class="top">Welcome to the SchBang!</h1>
     <h1>Wind Resistance</h1>
+    <hr>
+    <br>
+    <div><p>Everything</p></div>
+    <p>Nothing</p>
+    <div><span><p>Something</p></span></div>
 </body>
 </html>
